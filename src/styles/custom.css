@@ -1,0 +1,48 @@
+/* Custom utilities for RTL/LTR support */
+
+/* LTR-specific styles */
+[dir="ltr"] .ltr\:mr-2 {
+  margin-right: 0.5rem;
+}
+
+[dir="ltr"] .ltr\:ml-2 {
+  margin-left: 0.5rem;
+}
+
+[dir="ltr"] .ltr\:right-4 {
+  right: 1rem;
+}
+
+/* RTL-specific styles */
+[dir="rtl"] .rtl\:ml-2 {
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .rtl\:mr-2 {
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .rtl\:left-4 {
+  left: 1rem;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, var(--gradient-from), var(--gradient-via), var(--gradient-to));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Backdrop blur with glassmorphism */
+.glass-card {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
