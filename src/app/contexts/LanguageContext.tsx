@@ -123,23 +123,23 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.name': 'Ahmad Ahmad',
-    'hero.title': 'Backend Architect • SaaS Builder • Laravel Expert',
-    'hero.tagline': 'Building scalable platforms, payment systems, and automation engines.',
+    'hero.name': 'Ahmad Al Nahal',
+    'hero.title': 'Senior Backend Engineer • SaaS Systems Architect • Laravel Expert',
+    'hero.tagline': 'Building scalable multi-tenant SaaS platforms, financial transaction engines, and high-traffic systems.',
     'hero.cta.contact': 'Contact Me',
     'hero.cta.projects': 'View Projects',
     
     // About
     'about.title': 'About Me',
-    'about.description': 'With 4+ years of experience building SaaS platforms and complex systems, I specialize in creating scalable solutions that help startups and businesses grow. Based in the Middle East and working with clients worldwide, I focus on building clean, secure, and maintainable systems.',
+    'about.description': 'Senior Backend Engineer & SaaS Systems Architect with 4+ years of experience building and scaling multi-tenant SaaS platforms and transactional financial systems. Led backend architecture and a development team for a large-scale multi-vendor e-commerce platform similar to Shopify/Salla, handling high-traffic workloads with zero-downtime deployment strategies. Designed and implemented custom digital wallet and financial transaction engines, ensuring data consistency, concurrency safety, and auditability across distributed services.',
     'about.stat1.value': '4+',
     'about.stat1.label': 'Years Experience',
-    'about.stat2.value': '50+',
-    'about.stat2.label': 'Completed Projects',
-    'about.stat3.value': '20+',
-    'about.stat3.label': 'Platforms Built',
-    'about.stat4.value': '30+',
-    'about.stat4.label': 'Clients',
+    'about.stat2.value': '8+',
+    'about.stat2.label': 'Major Projects',
+    'about.stat3.value': '100+',
+    'about.stat3.label': 'Vendor Stores',
+    'about.stat4.value': '3',
+    'about.stat4.label': 'Companies',
     
     // What I Build
     'build.title': 'What I Build',
@@ -162,18 +162,63 @@ const translations = {
     // Projects
     'projects.title': 'Selected Projects',
     'projects.view': 'View Details',
-    'projects.p1.title': 'SaaS Management System',
-    'projects.p1.desc': 'Full-featured multi-tenant SaaS system with billing, analytics, and API integration',
-    'projects.p2.title': 'Multi-Vendor Marketplace',
-    'projects.p2.desc': 'E-commerce platform with vendor dashboards, payment processing, and inventory management',
-    'projects.p3.title': 'Payment & Wallet Platform',
-    'projects.p3.desc': 'Secure digital wallet system with multi-currency transfers and payment gateway',
-    'projects.p4.title': 'LMS Platform',
-    'projects.p4.desc': 'Complete learning management system with course creation, progress tracking, and certificates',
-    'projects.p5.title': 'Automation Engine',
-    'projects.p5.desc': 'Custom automation tool with workflows, integrations, and scheduling',
-    'projects.p6.title': 'API Platform',
-    'projects.p6.desc': 'Scalable API architecture with documentation, versioning, and rate limiting',
+    'projects.p1.title': 'Konin Cloud - Multi-Tenant E-commerce SaaS',
+    'projects.p1.desc': 'Large-scale multi-tenant e-commerce SaaS platform similar to Shopify/Salla, supporting hundreds of vendor stores with isolated databases and custom domains. Implemented zero-downtime deployment pipelines and CI/CD automation.',
+    'projects.p2.title': 'Digital Wallet & Financial Transaction Engine',
+    'projects.p2.desc': 'Centralized digital wallet and financial transaction engine handling deposits, transfers, balance reconciliation, and audit logging across distributed services with data integrity and concurrency safety.',
+    'projects.p3.title': 'Wasla Platform',
+    'projects.p3.desc': 'Groundbreaking mobile application for flexible transportation solutions with dynamic pricing based on customer needs. Features an intuitive interface connecting drivers with customers for seamless delivery experience.',
+    'projects.p4.title': 'Photome Platform',
+    'projects.p4.desc': 'Photography company platform with smart distribution system for service providers based on availability, closest delivery distance, cost optimization, and multiple factors for efficient service delivery.',
+    'projects.p5.title': 'Qaren Multi-Merchant E-commerce',
+    'projects.p5.desc': 'Multi-merchant e-commerce platform with smart product selection based on prices, customer preferences, nearby stores, ratings, and multiple factors. Features easy and affordable delivery services.',
+    'projects.p6.title': 'Liga Sports Platform',
+    'projects.p6.desc': 'Sports platform providing subscription and sponsorship services for sports clubs, club membership, sports tracking, and scheduling services for followers and customers.',
+    'projects.p7.title': 'Shamal Platform',
+    'projects.p7.desc': 'Family social platform providing management services for Tawafuq Association in Saudi Arabia, specializing in managing vision affairs for children, employees, parents, scheduled issues, vision appointment scheduling, and many services. Contains an application and platform for employees.',
+    'projects.p8.title': 'Al-Bayan Application',
+    'projects.p8.desc': 'Administrative and accounting application for cafes, restaurants, and hotels, managing many tasks. Worked on the application part controlled by the presenting employee.',
+    'projects.p9.title': 'Habits Platform',
+    'projects.p9.desc': 'Platform for managing user habits, where users add habits they want to adhere to, and habits nominated by the system. Progress is monitored, users are notified of achievements, and reminded of scheduled tasks.',
+    'projects.p10.title': 'Loghaty Platform',
+    'projects.p10.desc': 'Platform for teaching children through interactive, flexible and non-boring education. Contains virtual games that children interact with, includes teaching their own language and literature, monitoring progress and notifying the student\'s guardian of the child\'s progress and all their children.',
+    
+    // Project Details
+    'projects.detail.title': 'Project Details',
+    'projects.detail.overview': 'Overview',
+    'projects.detail.features': 'Key Features',
+    'projects.detail.tech': 'Technologies Used',
+    'projects.detail.close': 'Close',
+    
+    // Project 1 Details
+    'projects.p1.detail.overview': 'Led backend architecture and core system design for a large-scale multi-tenant e-commerce SaaS platform similar to Shopify/Salla. The platform supports hundreds of vendor stores with isolated databases and custom domains, ensuring complete data separation and brand independence for each vendor.',
+    
+    // Project 2 Details
+    'projects.p2.detail.overview': 'Designed and implemented a centralized digital wallet and financial transaction engine that handles deposits, transfers, balance reconciliation, and comprehensive audit logging across distributed services. The system ensures data consistency, concurrency safety, and full auditability for all financial operations.',
+    
+    // Project 3 Details
+    'projects.p3.detail.overview': 'Developed a groundbreaking mobile application that introduces a unique concept in digitizing daily logistics. Unlike traditional delivery services, Wasla offers flexible transportation solutions for a wide range of items and load types, each priced dynamically based on the customer\'s specific needs.',
+    
+    // Project 4 Details
+    'projects.p4.detail.overview': 'Built a comprehensive platform for a photography company that manages studio content, interconnects services, and provides photography and printing services electronically. The system features a smart distribution mechanism for service providers that optimizes assignments based on multiple factors.',
+    
+    // Project 5 Details
+    'projects.p5.detail.overview': 'Created a multi-merchant e-commerce platform where all merchants operate within a unified platform. The system facilitates the buying and shopping process with smart product selection algorithms that consider multiple factors including prices, customer preferences, nearby stores, ratings, and popularity.',
+    
+    // Project 6 Details
+    'projects.p6.detail.overview': 'Developed a comprehensive sports platform that provides subscription and sponsorship services for sports clubs, club membership management, and various options for users and customers. The platform includes sports tracking and scheduling services for followers.',
+    
+    // Project 7 Details
+    'projects.p7.detail.overview': 'Built a family social platform providing comprehensive management services for Tawafuq Association operating in Saudi Arabia. The platform specializes in managing vision affairs for children, employees, parents of children\'s families, scheduled issues, and vision appointment scheduling.',
+    
+    // Project 8 Details
+    'projects.p8.detail.overview': 'Developed an administrative and accounting application specifically designed for cafes, restaurants, and hotels. The system manages numerous operational tasks, with a focus on the application component controlled by presenting employees.',
+    
+    // Project 9 Details
+    'projects.p9.detail.overview': 'Created a habit management platform where users can add habits they want to adhere to, as well as habits nominated by the system. The platform monitors progress, notifies users of achievements, and sends reminders for scheduled tasks.',
+    
+    // Project 10 Details
+    'projects.p10.detail.overview': 'Built an educational platform for teaching children through interactive, flexible, and engaging methods. The platform contains virtual games that children interact with, teaching their own language and literature, with progress monitoring and guardian notifications.',
     
     // Process
     'process.title': 'My Process',
@@ -218,14 +263,14 @@ const translations = {
     'contact.linkedin': 'LinkedIn',
     
     // Footer
-    'footer.rights': '© 2026 Ahmad Ahmad. All rights reserved.',
+    'footer.rights': '© 2026 Ahmad Al Nahal. All rights reserved.',
   },
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('ar');
+  const [language, setLanguage] = useState<Language>('en');
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'ar' ? 'en' : 'ar');

@@ -6,22 +6,24 @@ export const Skills: React.FC = () => {
   const { t } = useLanguage();
 
   const skills = [
+    'PHP',
     'Laravel',
-    'Next.js',
-    'Flutter',
     'MySQL',
-    'Redis',
     'REST APIs',
-    'System Design',
-    'Payment Integrations',
-    'Multi-Tenancy',
-    'Cloud Basics',
-    'DevOps Basics',
-    'PostgreSQL',
+    'CI/CD',
     'Docker',
+    'Nginx',
     'Git',
-    'Stripe',
-    'WebSockets',
+    'Domain/DNS Automation',
+    'Payment & Wallet Systems',
+    'Modular Architecture',
+    'Microservices',
+    'Multi-Tenancy',
+    'System Design',
+    'Cloud Deployments',
+    'Node.js',
+    'React.js',
+    'Flutter',
   ];
 
   return (

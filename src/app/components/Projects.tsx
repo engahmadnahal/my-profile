@@ -1,43 +1,85 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from './ui/button';
+import { ProjectDetailDialog } from './ProjectDetailDialog';
 
 export const Projects: React.FC = () => {
   const { t } = useLanguage();
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   const projects = [
     {
+      id: 1,
       title: t('projects.p1.title'),
       description: t('projects.p1.desc'),
-      tags: ['Laravel', 'MySQL', 'Stripe', 'Multi-tenancy'],
+      tags: ['Laravel', 'MySQL', 'Multi-tenancy', 'CI/CD', 'Docker', 'Nginx'],
     },
     {
+      id: 2,
       title: t('projects.p2.title'),
       description: t('projects.p2.desc'),
-      tags: ['Laravel', 'Next.js', 'PostgreSQL', 'Redis'],
+      tags: ['Laravel', 'MySQL', 'Payment Systems', 'Financial Engine', 'REST APIs'],
     },
     {
+      id: 3,
       title: t('projects.p3.title'),
       description: t('projects.p3.desc'),
-      tags: ['Laravel', 'Payment APIs', 'Security', 'WebSockets'],
+      tags: ['Laravel', 'Mobile API', 'Dynamic Pricing', 'Logistics', 'REST APIs'],
     },
     {
+      id: 4,
       title: t('projects.p4.title'),
       description: t('projects.p4.desc'),
-      tags: ['Laravel', 'Next.js', 'Video Streaming', 'Certificates'],
+      tags: ['Laravel', 'Smart Distribution', 'Service Management', 'MySQL'],
     },
     {
+      id: 5,
       title: t('projects.p5.title'),
       description: t('projects.p5.desc'),
-      tags: ['Laravel', 'Queues', 'Cron', 'API Integration'],
+      tags: ['Laravel', 'E-commerce', 'Multi-merchant', 'Smart Selection', 'MySQL'],
     },
     {
+      id: 6,
       title: t('projects.p6.title'),
       description: t('projects.p6.desc'),
-      tags: ['Laravel', 'REST API', 'OAuth', 'Documentation'],
+      tags: ['Laravel', 'Sports Platform', 'Subscriptions', 'Scheduling', 'MySQL'],
+    },
+    {
+      id: 7,
+      title: t('projects.p7.title'),
+      description: t('projects.p7.desc'),
+      tags: ['Laravel', 'Management System', 'App Platform', 'Scheduling', 'MySQL'],
+    },
+    {
+      id: 8,
+      title: t('projects.p8.title'),
+      description: t('projects.p8.desc'),
+      tags: ['Laravel', 'Administrative System', 'Accounting', 'Employee Management'],
+    },
+    {
+      id: 9,
+      title: t('projects.p9.title'),
+      description: t('projects.p9.desc'),
+      tags: ['Laravel', 'Habit Tracking', 'Progress Monitoring', 'Notifications'],
+    },
+    {
+      id: 10,
+      title: t('projects.p10.title'),
+      description: t('projects.p10.desc'),
+      tags: ['Laravel', 'Educational Platform', 'Interactive Games', 'Progress Tracking'],
     },
   ];
+
+  const handleProjectClick = (projectId: number) => {
+    setSelectedProject(projectId);
+    setDialogOpen(true);
+  };
+
+  const selectedProjectData = selectedProject
+    ? projects.find((p) => p.id === selectedProject)
+    : null;
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
@@ -74,6 +116,7 @@ export const Projects: React.FC = () => {
                 variant="ghost"
                 size="sm"
                 className="w-full group-hover:bg-gradient-to-r group-hover:from-[var(--gradient-from)] group-hover:via-[var(--gradient-via)] group-hover:to-[var(--gradient-to)] group-hover:text-white transition-all"
+                onClick={() => handleProjectClick(project.id)}
               >
                 {t('projects.view')}
                 <ExternalLink className="w-4 h-4 ltr:ml-2 rtl:mr-2" />
@@ -82,6 +125,18 @@ export const Projects: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* Project Detail Dialog */}
+      {selectedProjectData && (
+        <ProjectDetailDialog
+          projectId={selectedProjectData.id}
+          open={dialogOpen}
+          onOpenChange={setDialogOpen}
+          title={selectedProjectData.title}
+          description={selectedProjectData.description}
+          tags={selectedProjectData.tags}
+        />
+      )}
     </section>
   );
 };

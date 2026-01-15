@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <span className="text-xl font-bold bg-gradient-to-r from-[var(--gradient-from)] via-[var(--gradient-via)] to-[var(--gradient-to)] bg-clip-text text-transparent">
-              {isRTL ? 'أحمد' : 'Ahmad'}
+              Ahmad
             </span>
           </div>
 

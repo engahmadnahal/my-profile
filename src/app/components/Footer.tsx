@@ -6,10 +6,10 @@ export const Footer: React.FC = () => {
   const { t } = useLanguage();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/ahmad', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/ahmad-ahmad', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:ahmad@example.com', label: 'Email' },
-    { icon: MessageCircle, href: 'https://wa.me/1234567890', label: 'WhatsApp' },
+    { icon: Github, href: 'https://github.com/engahmadnahal', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/ahmadnahal/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:ahmadghssannahal@gmail.com', label: 'Email' },
+    { icon: MessageCircle, href: 'https://wa.me/972592146780', label: 'WhatsApp' },
   ];
 
   return (

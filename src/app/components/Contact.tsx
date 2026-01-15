@@ -10,22 +10,22 @@ export const Contact: React.FC = () => {
     {
       icon: MessageCircle,
       label: t('contact.whatsapp'),
-      value: 'WhatsApp',
-      href: 'https://wa.me/1234567890',
+      value: '+972592146780',
+      href: 'https://wa.me/972592146780',
       color: 'from-green-500 to-green-600',
     },
     {
       icon: Mail,
       label: t('contact.email'),
-      value: 'ahmad@example.com',
-      href: 'mailto:ahmad@example.com',
+      value: 'ahmadghssannahal@gmail.com',
+      href: 'mailto:ahmadghssannahal@gmail.com',
       color: 'from-blue-500 to-blue-600',
     },
     {
       icon: Linkedin,
       label: t('contact.linkedin'),
       value: 'LinkedIn',
-      href: 'https://linkedin.com/in/ahmad-ahmad',
+      href: 'https://www.linkedin.com/in/ahmadnahal/',
       color: 'from-[#0077B5] to-[#00A0DC]',
     },
   ];
@@ -69,7 +69,7 @@ export const Contact: React.FC = () => {
             className="bg-gradient-to-r from-[var(--gradient-from)] via-[var(--gradient-via)] to-[var(--gradient-to)] text-white hover:opacity-90 transition-opacity rounded-xl"
             asChild
           >
-            <a href="mailto:ahmad@example.com">
+            <a href="mailto:ahmadghssannahal@gmail.com">
               <Mail className="w-5 h-5 ltr:mr-2 rtl:ml-2" />
               {t('hero.cta.contact')}
             </a>
